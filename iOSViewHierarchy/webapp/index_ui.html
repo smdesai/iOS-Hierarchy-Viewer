@@ -155,7 +155,10 @@
 		function buildViewFunc(view) {
 			var isOpenable = view.views && view.views.length > 0;
 	        var newList = $('<ul class="tree_node" data_id="' + view.id + '"></ul');
-	        newList.append('<div class="tree_node_name" opened="0" data_id="' + view.id + '" can_expand="' + (isOpenable?'1':'0') + '">' + (isOpenable?'○':'·') +  view['class'] + '</div>');
+                var n = view['class'].indexOf(':');
+                var accessibility = (n == -1) ? '' : ' accessibilityLabel';
+
+	        newList.append('<div class="tree_node_name' + accessibility + '" opened="0" data_id="' + view.id + '" can_expand="' + (isOpenable?'1':'0') + '">' + (isOpenable?'○':'·') +  view['class'] + '</div>');
 
 	        if ( view.views ) $.each(view.views, function(index, data) {
 	               var newElement = $('<li class="tree_child"></li>');

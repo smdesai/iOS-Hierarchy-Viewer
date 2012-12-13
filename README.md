@@ -5,8 +5,7 @@ iOS Hierarchy Viewer allows developers to debug their user interfaces. If there 
 
 **iOS Hierarchy Viewer (since 1.4.6 version) gives preview of data if you use Core Data API in your project. See 'Instruction' section to start with it.**
 
-![](http://androiddev.vipserv.org/wordpress/wp-content/uploads/2012/04/Screen-Shot-2012-04-24-at-9.09.20-PM.png)
-![](http://dl.dropbox.com/u/858551/core_data.png)
+![](http://github.com/smdesai/OS-Hierarchy-Viewer/Images/view.png)
 
 Features
 ====================
@@ -19,12 +18,12 @@ Features
 Installation
 ====================
 
-+ download newest version of library avaiable here: [Lib]
-+ add these files to your project (drag&drop into xCode project)
++ download the statiic library and header file from here: [Lib]
++ add these files to your project (drag&drop into into your Xcode project)
 + make sure that you have added “-ObjC -all_load” to “other linker flags” (click at project root element, select “Build settings” tab, search for “other linker flags”)
-+ if you already have JSONKit.m file in your project, please remove it because of linker conflict
-+ launch hierarchy viewer in your code by calling [iOSHierarchyViewer start];. The best place for it is AppDelegate::applicationDidBecomeActive callback
-+ find or get from logs device/simulator ip address and go to ‘http://[ip_address]:9449′ address (Chrome/Firefox only)
++ if you already have JSONKit.m in your project, please remove it to avoid linker conflicts
++ launch Hierarchy Viewer in your code by calling [iOSHierarchyViewer start];. The best place for it is AppDelegate::applicationDidBecomeActive callback
++ find or get from the logs device/simulator IP address and go to ‘http://[ip_address]:9449′ address. Simulator IP address is 127.0.0.1
 
 ```objc
 - (void)applicationDidBecomeActive:(UIApplication *)application
@@ -47,8 +46,7 @@ Installation
 }
 ```
 
-You can always look at sample project, there is only 1 line of code needed for iOSHierarchyViewer to work with your project.
-We really like PrettyKit ( https://github.com/vicpenap/PrettyKit ), so we just enabled our hierarchy viewer in their sample project. If you don't know what PrettyKit is you need to check it out!
+You can always look at sample project, there is only 1 line of code needed for iOSHierarchyViewer to work.
 
 Changelog:
 ====================
@@ -76,4 +74,4 @@ Contributing:
 Did you find a bug ? Do you have feature request ? Do you want to merge a feature ?
 Send us a pull request or add an issue in the tracker!
 
-[LIB]: https://github.com/glock45/iOS-Hierarchy-Viewer/downloads
+[LIB]: https://github.com/smdesai/iOS-Hierarchy-Viewer/Lib

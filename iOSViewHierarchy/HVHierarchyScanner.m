@@ -272,7 +272,9 @@ static NSString* NSStringFromCATransform3D(CATransform3D transform)
     } else {
       [propertyDescription setValue:propertyType forKey:@"type"];
     }
-    if (readValue) {
+
+    // -sd-
+    if (readValue && ![propertyName isEqualToString:@"typingAttributes"]) {
       id propertyValue;
       @try {
         propertyValue = [obj valueForKey:propertyName];
@@ -364,6 +366,7 @@ static NSString* NSStringFromCATransform3D(CATransform3D transform)
     [viewDescription setValue:[NSNumber numberWithFloat:handleNaN(view.layer.position.y)] forKey:@"layer_position_y"];
     [viewDescription setValue:[NSNumber numberWithFloat:handleNaN(view.layer.anchorPoint.x)] forKey:@"layer_anchor_x"];
     [viewDescription setValue:[NSNumber numberWithFloat:handleNaN(view.layer.anchorPoint.y)] forKey:@"layer_anchor_y"];
+
 
     // put properties from super classes
     NSMutableArray *properties = [[[NSMutableArray alloc] initWithCapacity:10] autorelease];
