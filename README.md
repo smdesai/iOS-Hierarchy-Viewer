@@ -14,11 +14,12 @@ Features
 + preview of device/simulator screen. Can be scaled and/or rotated on demand
 + debug frames shows the exact UIViews frames
 + property list shows obj-c properties and their values for selected UIView
++ accessibility values are indicated in the tree by a diamond
 
 Installation
 ====================
 
-+ download the statiic library and header file from here: [Lib]
++ download the statiic library and header file from the Lib folder
 + add these files to your project (drag&drop into into your Xcode project)
 + make sure that you have added “-ObjC -all_load” to “other linker flags” (click at project root element, select “Build settings” tab, search for “other linker flags”)
 + if you already have JSONKit.m in your project, please remove it to avoid linker conflicts
@@ -71,7 +72,5 @@ Version 1.6:
 
 Contributing:
 ====================
-Did you find a bug ? Do you have feature request ? Do you want to merge a feature ?
+Did you find a bug? Do you have feature request? Do you want to merge a feature?
 Send us a pull request or add an issue in the tracker!
-
-[LIB]: https://github.com/smdesai/iOS-Hierarchy-Viewer/Lib

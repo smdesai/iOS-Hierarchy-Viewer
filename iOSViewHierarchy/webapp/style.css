@@ -8,7 +8,7 @@
     	-webkit-user-select: none;  
    		-ms-user-select: none; 
    		user-select: none;
-   		font-family: SlatePro;
+   		font-family: SlatePro, Verdana;
     }
     body
     {
@@ -52,7 +52,7 @@
         background: #7e7e7e;
         padding: 2px;
         color: #fff;
-        font-family: SlatePro;
+        font-family: SlatePro, Verdana;
         font-weight: normal;
         font-size: 13px;
         border: 1px solid black;
@@ -67,7 +67,7 @@
         text-align: center;
         padding: 3px;
         border: 1px solid black;
-        font-family: SlatePro;
+        font-family: SlatePro, Verdana;
         font-size: 11px;
         color: #262626;
     }
@@ -80,7 +80,7 @@
         right: 0px;
         text-align: center;
         font-size: 11px;
-        font-family: SlatePro;
+        font-family: SlatePro, Verdana;
     }
     .entities_list
     {
@@ -96,7 +96,7 @@
     {
         color: #262626;
         font-size: 15px;
-        font-family: SlatePro;
+        font-family: SlatePro, Verdana;
         padding-bottom: 4px;
         padding-left: 5px;
         padding-right: 5px;
@@ -127,7 +127,7 @@
         border: 0px;
         /*box-shadow: inset 0px 0px 22px #444;*/
         color: #EEE;
-        font-family: SlatePro;
+        font-family: SlatePro, Verdana;
         font-size: 14px;
         border-radius: 4px;
         padding-left: 8px;
@@ -157,7 +157,7 @@
         display: inline-block;
         padding-right: 5px;
         border: 1px solid #444;
-        font-family: SlatePro;
+        font-family: SlatePro, Verdana;
         font-size: 13px;
         margin: 4px;
         border-radius: 5px;
