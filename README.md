@@ -5,7 +5,7 @@ iOS Hierarchy Viewer allows developers to debug their user interfaces. If there 
 
 **iOS Hierarchy Viewer (since 1.4.6 version) gives preview of data if you use Core Data API in your project. See 'Instruction' section to start with it.**
 
-![](https://github.com/smdesai/iOS-Hierarchy-Viewer/blob/master/Images/view.png)
+![](https://raw.github.com/smdesai/iOS-Hierarchy-Viewer/master/Images/view.png)
 
 Features
 ====================
